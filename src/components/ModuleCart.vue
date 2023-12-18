@@ -28,14 +28,7 @@ import { toRefs } from 'vue'
 import Dot from '@/components/icons/Dot.vue'
 
 const props = defineProps({
-  item: {
-    type: Object,
-    default: () => ({
-      tags: ['Pediatrics', 'Pulmonology'],
-      title: 'Antibacterial therapy. Pediatric pulmonology',
-      materials: ['Online test', 'materials']
-    })
-  }
+  item: { type: Object, default: () => ({ tags: [], title: '', materials: [] }) }
 })
 const { item } = toRefs(props)
 </script>

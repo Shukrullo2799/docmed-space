@@ -13,6 +13,9 @@
   .input-icon {
     @apply absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer;
   }
+  .title {
+    @apply text-2xl font-bold text-[#413663] leading-7 font-ubuntu;
+  }
 }
 
 * {
@@ -39,4 +42,7 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #f4f4f9;
   border-radius: 10px;
+}
+.noscroll::-webkit-scrollbar {
+  display: none;
 }

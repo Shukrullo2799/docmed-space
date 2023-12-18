@@ -21,12 +21,7 @@ import ArrowRight from '@/components/icons/ArrowRight.vue'
 const props = defineProps({
   item: {
     type: Object,
-    default: () => ({
-      url: 'https://picsum.photos/200/300',
-      title: 'Product name',
-      description: 'Product description',
-      status: 'Open'
-    })
+    default: () => ({})
   }
 })
 const { item } = toRefs(props)

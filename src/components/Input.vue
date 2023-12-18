@@ -4,7 +4,7 @@
       :type="type"
       class="border border-[#C8C8E3] rounded-xl pl-4 py-3 w-full text-base leading-5 text-[#413663] font-normal truncate h-11"
       :class="[
-        icon ? 'pr-[60px]' : 'pr-4',
+        icon && show_icon ? 'pr-[60px]' : 'pr-4',
         error ? 'border-[#EA6361] bg-[#FFEBEB] text-[#C51311]' : '',
         center ? 'text-center' : ''
       ]"
