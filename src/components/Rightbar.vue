@@ -1,8 +1,8 @@
 <template>
   <aside
-    class="md:max-w-[470px] bg-[#F9F9FB] p-8 flex flex-col gap-8 h-full overflow-auto flex-shrink-0 rounded-2xl"
+    class="lg:max-w-[470px] bg-[#F9F9FB] p-8 lg:pb-8 pb-28 flex flex-col gap-8 lg:h-full lg:overflow-auto noscroll xl:flex-shrink-0 rounded-2xl"
   >
-    <div>Calendar</div>
+    <Calendar />
     <div class="flex flex-col gap-8 text-[#413663]">
       <h3 class="font-ubuntu text-2xl leading-7 font-bold">Events</h3>
       <p class="font-ubuntu text-xl font-medium">
@@ -30,6 +30,7 @@
 import { ref } from 'vue'
 import EventCard from './EventCard.vue'
 import { useEventStore } from '@/stores/event'
+import Calendar from './Calendar.vue'
 const eventStore = useEventStore()
 const event = ref({
   id: 1,

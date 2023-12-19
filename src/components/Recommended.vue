@@ -4,12 +4,12 @@
       <h3 class="title truncate">Recommended media</h3>
       <span class="underline leading-5 text-[#413663] tracking-[-0.21px] truncate">Read more</span>
     </div>
-    <div class="flex gap-8 md:flex-row flex-col">
+    <div class="flex gap-8 2xl:flex-row flex-col">
       <RecommendedCart
         :item="rec"
         v-for="(rec, i) in dataStore.getRecommended"
         :key="i"
-        class="md:max-w-[468px] md:w-1/2"
+        class="md:max-w-[468px] 2xl:w-1/2 mx-auto"
       />
     </div>
   </div>

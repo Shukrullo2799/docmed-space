@@ -10,13 +10,13 @@
       </div>
       <Edit class="w-6 h-6 cursor-pointer" />
     </div>
-    <div class="flex gap-4">
+    <div class="flex gap-4 flex-wrap">
       <Button label="Open" />
       <Button label="Unpublish profile" severity="secondary" class="whitespace-nowrap" />
     </div>
     <div>
       <p class="text-[#78708F] mb-4">Link to your profile</p>
-      <div class="flex gap-5">
+      <div class="flex gap-5 xl:flex-nowrap lg:flex-wrap">
         <Input class="w-full" placeholder="" v-model:value="user.referral_link" icon />
         <Button
           label="Copy link"

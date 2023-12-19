@@ -1,5 +1,7 @@
 <template>
-  <div class="flex flex-col flex-shrink-0 justify-between p-8 pt-10 h-full w-[330px] bg-[#F9F9FB]">
+  <div
+    class="flex flex-col justify-between p-8 pt-10 h-full w-[330px] bg-[#F9F9FB] gap-10 overflow-auto noscroll"
+  >
     <div class="flex flex-col gap-10">
       <Logo />
       <div class="flex flex-col gap-4">

@@ -4,7 +4,7 @@
     <p class="text-[#78708F]">
       Invite your colleagues and get bonuses to your bonus account for their registration
     </p>
-    <div class="flex gap-5">
+    <div class="flex gap-5 xl:flex-nowrap lg:flex-wrap">
       <Input class="w-full" placeholder="" v-model:value="referralLink" disabled />
       <Button label="Copy link" class="flex-shrink-0" @click="copyToClipboard(referralLink)" />
     </div>
